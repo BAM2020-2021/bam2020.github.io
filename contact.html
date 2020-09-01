@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Drinks</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+  <div class="navbar">
+  <a href="index.html">BAM</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Menu
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="drinks.html">Drinks</a>
+    <a href="snacks.html">Snacks</a>
+  </div>
+  </div> 
+  <a href="#C1">About Us</a>
+  <a href="#C2">Contact</a>
+</div>
+
+
+
+
+
+
+
+
+<!--footer starts here-->
+
+
+
+<footer>
+  <p1 id="C1">Social Media </p1>
+  <p1 id="C2">Contact</p1>
+</footer>
+
+
+
+<!--java script code for the navbar-->
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<!--end of the page-->
+</body>
+</html>
