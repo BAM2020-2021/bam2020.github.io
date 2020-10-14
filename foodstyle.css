@@ -1,0 +1,137 @@
+.box-1 div {
+    background-color: black;
+    height: 1000px;
+    width: 100%;
+    border: hotpink;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .nav a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  /*the styling for flexbox for the menu items starts here*/
+  // BASIC
+/*
+.menu-img ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-img li {
+  height: 40vh;
+  flex-grow: 1;
+}
+
+.menu-img li:last-child {
+  // There's no science in using "10" here. In all my testing, this delivered the best results.
+  flex-grow: 10;
+}
+
+.menu-img img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+// ADVANCED
+
+// Portrait
+
+.menu-img @media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
+}
+
+// Short screens
+
+.menu-img @media (max-height: 768px
+) {
+  li {
+    height: 80vh;
+  }
+}
+
+// Smaller screens in portrait
+
+.menu-img @media (max-aspect-ratio: 1/1) and (max-width: 768px
+) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    height: 250px;
+    width: 250px;
+  }
+  img {
+    width: 250px;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+/*end of the styling for the flexbox*/
+
+
+.img-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+}
+
+.container div {
+  margin-left: 175px;
+}
+
+.item  {
+  margin: 5px;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+}
+
+.container2 div {
+  margin-left: 175px;
+}
+
+.item  {
+  margin: 5px;
+}
+
+.container2 div {
+  display: none;
+}
