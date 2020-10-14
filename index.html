@@ -1,52 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="foodstyle.css">
+    <title>B.A.M</title>
+</head>
 
-    <script>
-      $(document).ready(function(){
-        $('#icon').click(function(){
-          $('ul').toggleClass('active');
-        });
-      });
-    </script>
+<body>
 
-  </head>
-  <body>
-    <nav>
+    <!--start of the nav bar-->
+    <div class="nav-bar">
 
-      <label class="logo"><img src="logo.jpeg" height="69px" height="69px" href="index.html" alt="logo"></label>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-              <li><a href="drinks.html">Drinks</a></li>
-              <li><a href="snacks.html">Snacks</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <label id="icon"><i class="fas fa-bars"></i></label>
-    </nav>
+        <nav>
 
+            <a href="index.html">
+                <img alt="logo" src="logo.png" style="padding: 4px; height:70px;">
+            </a>
 
+            <ul class="nav-links">
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+    
+                <li>
+                    <a href="aboutus.html">About us</a>
+                </li>
+            </ul>
+            
+            <!--nav bar for mobile view starts here-->
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            <!--nav bar for mobile view ends here-->
+        
+        </nav>
 
-
-<!--end of navbar-->
-
-
-
-<div class="slide">
-        <img src="bamlounge.JPG" height="450px" width="100%">
     </div>
 
+<!--
+    <ul class="social">
+        <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>-->
+
+    
+
+    
+
+    <!--end of the nav bar-->
+
+    <!--The body of the page starts here-->
+
+<div class="box-1">
+    
+    <h1>Hello World</h1>
+</div>
 
 
-    <footer>
-  <p1 id="C1">Social Media </p1>
-  <p1 id="C2">Contact</p1>
-</footer>
-  </body>
-</html>
+
+    
+    <!--The body of the page ends here-->
+
+    <!--the footer of the page starts here-->
+
+    <div class="footer">
+
+        <h1>Footer starts here--</h1>
+
+    </div>
+    <!--the footer of the page ends here-->
+
+<!--js script links down here-->
+    <script src="app.js"></script>
+
+<!--js code link above-->
+    </body>
+    
+    </html>
